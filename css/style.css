@@ -3,7 +3,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: Arial, Helvetica, sans-serif;
-    letter-spacing: 0.5px;
+
 }
 
 :root{
@@ -14,13 +14,13 @@ main{
     display: grid;
     grid-template-columns: 30% 70%;
     min-height: 100vh;
-    padding: 20px 0;
 }
 
 main .hero{
     background-color: #ffff;
     width: 90%;
     margin: 0 auto;
+    padding-top: 20px;
 }
 
 main .hero .login{
@@ -125,4 +125,166 @@ main .hero .hero-asset{
 
 main .school-info{
     background-color: #f7fbfe;
+    display: flex;
+    align-items: center;
 }
+
+main .school-info .container {
+    width: 80%;
+    margin: 0 auto;
+    color: #212529;
+}
+
+main .school-info .container h1{
+    padding-bottom: 20px;
+    font-size: 30px;
+}
+
+main .school-info .container form{
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+main .school-info .container form .line{
+    background-color: #dee2e5;
+    height: 1px;
+    margin: 10px 0;
+}
+
+main .school-info .container form .form{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+main .school-info .container form .form label{
+    font-size: 13px;
+}
+
+main .school-info .container form div select, main .school-info .container form div input#year{
+    position: relative;
+    appearance: none;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+background-color: #fff;
+    padding: 10px;
+    outline: none;
+    border: 1px solid #abafb8;
+    border-radius: 5px;
+}
+
+/*To remove button from IE11,*/
+select::-ms-expand {
+    display: none;
+}
+
+select::after{
+    position: absolute;
+    content: '>';
+  color: var(--primary-color);
+  -webkit-transform: rotate(90deg);
+  -moz-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  transform: rotate(90deg);
+  right: 11px;
+  top: 18px;
+  padding: 0 0 2px;
+  border-bottom: 1px solid #999;
+  pointer-events: none;
+}
+
+main .school-info .container form div p{
+    text-align: right;
+    font-size: 14px;
+}
+
+main .school-info .container form div a{
+    color: var(--primary-color);
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.still-schooling{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 20px 0;
+}
+
+.still-schooling input{
+    width: 1.3em;
+    height: 1.3em;
+    background-color: white;
+    border-radius: 50%;
+    vertical-align: middle;
+    border: 1px solid #ddd;
+    appearance: none;
+    -webkit-appearance: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.still-schooling input:checked {
+    background-color: var(--primary-color);
+}
+
+main .school-info .container form .add-school{
+    background-color: #ebf5fd;
+    border-radius: 5px;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+main .school-info .container form .add-school i{
+    color: var(--primary-color);
+}
+
+main .school-info .container form .add-school .info{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+main .school-info .container form .add-school .info p{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 5px;
+}
+
+main .school-info .container form .add-school .info p .title{
+    font-weight: bold;
+    color: var(--primary-color);
+    
+}
+
+main .school-info .container form .add-school .info p span{
+    color: #abafb8;
+}
+
+main .school-info .container form .add-school .fa-plus{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid var(--primary-color);
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+}
+
+main .school-info .container form button{
+    width: 50%;
+    align-self: flex-end;
+    background-color: var(--primary-color);
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    padding: 10px;
+    font-size: 14px;
+}
+
+
