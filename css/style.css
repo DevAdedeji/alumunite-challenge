@@ -28,6 +28,7 @@ main .hero .login{
     align-items: center;
     gap: 10px;
     padding-top: 50px;
+    cursor: pointer;
 }
 
 main .hero .login p{
@@ -311,6 +312,16 @@ main .school-info .container form button{
 @media (max-width:750px){
     main .school-info .container form{
         width: 100%;
+    }
+    main .hero .info{
+        display: none;
+    }
+    main .hero .hero-asset{
+        display: none;
+    }
+    main .school-info{
+        background-color: #fff;
+        padding: 20px 0;
     }
 }
 
