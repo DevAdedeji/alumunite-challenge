@@ -127,7 +127,7 @@ main .school-info{
     background-color: #f7fbfe;
     display: flex;
     align-items: center;
-    padding: 20px 0;
+    padding: 100px 0 20px 0;
 }
 
 main .school-info .container {
@@ -150,7 +150,6 @@ main .school-info .container form{
 main .school-info .container form .line{
     background-color: #dee2e5;
     height: 1px;
-    margin: 10px 0;
 }
 
 main .school-info .container form .form{
@@ -198,7 +197,7 @@ main .school-info .container form .form div i{
 
 main .school-info .container form div p{
     text-align: right;
-    font-size: 14px;
+    font-size: 12px;
 }
 
 main .school-info .container form div a{
@@ -286,7 +285,7 @@ main .school-info .container form button{
     border: none;
     border-radius: 5px;
     outline: none;
-    padding: 10px;
+    padding: 15px;
     font-size: 14px;
 }
 
