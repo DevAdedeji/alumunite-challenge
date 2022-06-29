@@ -127,6 +127,7 @@ main .school-info{
     background-color: #f7fbfe;
     display: flex;
     align-items: center;
+    padding: 20px 0;
 }
 
 main .school-info .container {
@@ -162,8 +163,9 @@ main .school-info .container form .form label{
     font-size: 13px;
 }
 
-main .school-info .container form div select, main .school-info .container form div input#year{
+main .school-info .container form .form select, main .school-info .container form div input#year{
     position: relative;
+    width: 100%;
     appearance: none;
 	-webkit-appearance: none;
 	-moz-appearance: none;
@@ -174,24 +176,24 @@ background-color: #fff;
     border-radius: 5px;
 }
 
+
+
 /*To remove button from IE11,*/
-select::-ms-expand {
+select::-ms-expand{
     display: none;
 }
 
-select::after{
+main .school-info .container form .form div{
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+main .school-info .container form .form div i{
     position: absolute;
-    content: '>';
-  color: var(--primary-color);
-  -webkit-transform: rotate(90deg);
-  -moz-transform: rotate(90deg);
-  -ms-transform: rotate(90deg);
-  transform: rotate(90deg);
-  right: 11px;
-  top: 18px;
-  padding: 0 0 2px;
-  border-bottom: 1px solid #999;
-  pointer-events: none;
+    right: 20px;
+    color: var(--primary-color);
+    cursor: pointer;
 }
 
 main .school-info .container form div p{
@@ -236,6 +238,7 @@ main .school-info .container form .add-school{
     display: flex;
     align-items: center;
     justify-content: space-between;
+    cursor: pointer;
 }
 
 main .school-info .container form .add-school i{
@@ -288,3 +291,41 @@ main .school-info .container form button{
 }
 
 
+
+@media (max-width:1050px){
+    main{
+        display: grid;
+        grid-template-columns: 40% 60%;
+        min-height: 100vh;
+    }
+    main .school-info .container form{
+        width: 80%;
+    }
+}
+
+@media (max-width:950px){
+    main .school-info .container form{
+        width: 90%;
+    }
+}
+
+@media (max-width:750px){
+    main .school-info .container form{
+        width: 100%;
+    }
+}
+
+@media (max-width:650px){
+    main{
+        grid-template-columns: 100%;
+    }
+}
+
+@media (max-width:400px){
+    main .school-info .container form div p{
+        font-size: 10px;
+    }
+    main .school-info .container form .add-school .info p span{
+        width: 70%;
+    }
+}

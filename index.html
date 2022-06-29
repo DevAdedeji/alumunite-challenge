@@ -52,57 +52,38 @@
                 <h1>
                     School Information
                 </h1>
-                <form>
+                <form class="school-form">
                     <div class="school">
                         <!-- Select school -->
                         <div class="form">
                             <label for="school">Select a school you graduated from</label>
-                            <select name="school" id="school">
-                                <option value="Farm Academy">Farm Academy</option>
-                                <option value="Dominion Academy">Dominion Academy</option>
-                                <option value="Lead Academy">Lead Academy</option>
-                                <option value="Convenant Academy">Convenant Academy</option>
-                            </select>
+                            <div>
+                                <select name="school" id="${school.name}">
+                                    <option value="Farm Academy">Farm Academy</option>
+                                    <option value="Dominion Academy">Dominion Academy</option>
+                                    <option value="Lead Academy">Lead Academy</option>
+                                    <option value="Convenant Academy">Convenant Academy</option>
+                                </select>
+                                <i class="fa fa-chevron-down" aria-hidden="true"></i>
+                            </div>
                         <p>Can't find your school <a href="#">Add your school to the list</a> </p>
                         </div>
                         <!-- Still Schooling option -->
                         <div class="still-schooling">
-                            <input type="checkbox" name="still-schooling" id="still-schooling">
+                            <input type="checkbox" name="still-schooling" id="${school.stillSchooling}">
                             <p>Still schooling here presently</p>
                         </div>
                         <!-- Year Graduated -->
                         <div class="form">
                             <label for="year">Year Graduated</label>
-                            <input type="date" name="year" id="year">
+                            
+                                <input type="date" name="year" id="year">
+                            
                         </div>
                     </div>
                     <div class="line">
 
-                    </div>
-                    <div class="school">
-                        <!-- Select school -->
-                        <div class="form">
-                            <label for="school">Select a school you graduated from</label>
-                            <select name="school" id="school">
-                                <option value="Farm Academy">Farm Academy</option>
-                                <option value="Dominion Academy">Dominion Academy</option>
-                                <option value="Lead Academy">Lead Academy</option>
-                                <option value="Convenant Academy">Convenant Academy</option>
-                            </select>
-                        <p>Can't find your school <a href="#">Add your school to the list</a> </p>
-                        </div>
-                        <!-- Still Schooling option -->
-                        <div class="still-schooling">
-                            <input type="checkbox" name="still-schooling" id="still-schooling">
-                            <p>Still schooling here presently</p>
-                        </div>
-                        <!-- Year Graduated -->
-                        <div class="form">
-                            <label for="year">Year Graduated</label>
-                            <input type="date" name="year" id="year">
-                        </div>
-                    </div>
-
+    </div>
                     <!-- Add another school -->
                     <div class="add-school">
                         <div class="info">
@@ -120,5 +101,6 @@
             </div>
         </section>
     </main>
+    <script src="./js/app.js"></script>
 </body>
 </html>
